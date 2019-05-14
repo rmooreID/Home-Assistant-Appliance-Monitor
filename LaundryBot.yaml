@@ -1,0 +1,35 @@
+LaundryBot
+
+esphome:
+ name: laundrybot
+ platform: ESP32
+ board: featheresp32
+
+wifi:
+ ssid: [network-id]
+ password: [network-password]
+
+# Enable Home Assistant API
+api:
+ password: [api-password]
+
+ota:
+ password: [ota-password]
+
+binary_sensor:
+ - platform: status
+   name: "LaundryBot"
+ - platform: gpio
+   pin: GPIO13
+   name: "Washer"
+   device_class: vibration
+   filters:
+   - delayed_on: 10ms
+   - delayed_off: 5min
+ - platform: gpio
+   pin: GPIO33
+   name: "Dryer"
+   device_class: vibration
+   filters:
+   - delayed_on: 10ms
+   - delayed_off: 5min
