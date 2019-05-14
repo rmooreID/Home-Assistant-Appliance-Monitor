@@ -5,7 +5,7 @@ While I'm using this for washer and dryer units, this concept may be extended to
 
 To follow this guide you will need [Home Assistant](https://www.home-assistant.io/) running on the same network as the sensor unit.
 
-> ## Home Assistant
+> ## [Home Assistant](https://www.home-assistant.io/)
 > Open source home automation that puts local control and privacy first.
 
 There are other ways (IFTTT, Slack, Twitter) to get alerts from a sensor to your phone but that's a topic for another guide.
@@ -23,7 +23,7 @@ There are other ways (IFTTT, Slack, Twitter) to get alerts from a sensor to your
 ## Step 1: Set up the software
 1. Install Home Assistant https://www.home-assistant.io/getting-started/
 2. Install ESPHome https://www.home-assistant.io/components/esphome/
-3. Compile and upload .YAML script to ESP32 https://esphome.io/guides/getting_started_hassio.html
+3. Compile and upload [LaundryBot.yaml](docs/LaundryBot.yaml) script to ESP32 https://esphome.io/guides/getting_started_hassio.html
 
 ## Step 2: Set up the hardware
 1. Solder SW-420 to breadboard
