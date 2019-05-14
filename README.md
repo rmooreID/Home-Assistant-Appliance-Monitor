@@ -23,7 +23,7 @@ There are other ways (IFTTT, Slack, Twitter) to get alerts from a sensor to your
 ## Step 1: Set up the software
 1. Install Home Assistant https://www.home-assistant.io/getting-started/
 2. Install ESPHome https://www.home-assistant.io/components/esphome/
-3. Compile and upload [LaundryBot.yaml](docs/LaundryBot.yaml) script to ESP32 https://esphome.io/guides/getting_started_hassio.html
+3. Compile and upload [LaundryBot.yaml](./LaundryBot.yaml) script to ESP32 https://esphome.io/guides/getting_started_hassio.html
 
 ## Step 2: Set up the hardware
 1. Solder SW-420 to breadboard
