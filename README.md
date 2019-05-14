@@ -12,7 +12,9 @@ To follow this guide you will need [Home Assistant](https://www.home-assistant.i
 
 There are other ways (IFTTT, Slack, Twitter) to get alerts from a sensor to your phone but that's a topic for another guide.
 
-This guide assumes that the reader has basic knowledge and experience with electronics prototyping, soldering, scripting, and debugging. There are many ways to do any project and this is just one of them. While I hope this is helpful, I offer no warranty and assume no liability for the result of following any or all of the instructions in this guide.
+## Disclaimer
+This guide assumes that the reader has basic knowledge and experience with electronics prototyping, soldering, scripting, and debugging. As with any project there are many ways to acheive the desired result and this is just one of them. 
+While I hope this is helpful, I offer no warranty and assume no liability for the result of following any or all of the instructions in this guide.
 
 ## Here's what you'll need
 - Home Assistant running on the local network
