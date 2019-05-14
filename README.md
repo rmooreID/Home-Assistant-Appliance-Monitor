@@ -1,9 +1,9 @@
 # LaundryBot
 The year is 2019 and there is no shortage of _smart_ appliances. But does that mean we should neglect our _dumb_ pre-IoT machines just because they can't send a push notification?
 
-I invite you to explore one way to get alerts about the state of a _dumb_ appliance based on signal from a binary sensor. In this example I'm attaching an SW-420 vibration sensor to the back of a washer and dryer in a shared house to allow remote notification based on laundry room activity. 
+I invite you to explore one way to get alerts about the state of any appliance regardless of its _smartness_ based on signal from a binary sensor. In this example I'm attaching an SW-420 vibration sensor to the back of a washer and dryer in a shared house to allow remote notification based on laundry room activity. 
 
-While this guide centers around washer and dryer units, this concept may be extended to other _dumb_ appliances. For instance, you could use a thermocouple to send an alert when the oven is ready, etc.
+While this guide centers around washer and dryer units, this concept may be extended to other appliances. For instance, you could use a thermocouple to send an alert when the oven is ready, etc.
 
 To follow this guide you will need [Home Assistant](https://www.home-assistant.io/) running on the same network as the sensor unit.
 
