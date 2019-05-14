@@ -6,15 +6,14 @@ esphome:
  board: featheresp32
 
 wifi:
- ssid: [network-id]
- password: [network-password]
+ ssid: 'network-id'
+ password: 'network-password'
 
-# Enable Home Assistant API
 api:
- password: [api-password]
+ password: 'api-password'
 
 ota:
- password: [ota-password]
+ password: 'ota-password'
 
 binary_sensor:
  - platform: status
