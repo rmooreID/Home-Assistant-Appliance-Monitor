@@ -31,16 +31,23 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 1. Install [Home Assistant](https://www.home-assistant.io/getting-started/)
 2. Install [ESPHome](https://www.home-assistant.io/components/esphome/)
 3. Compile and upload [LaundryBot.yaml](./LaundryBot.yaml) script to ESP32 using [ESPHome](https://esphome.io/guides/getting_started_hassio.html)
-
 ![ESPHome Dashboard](./assets/laundrybot-9.png)
+![ESPHome Dashboard](./assets/laundrybot-10.png)
 
 ## Step 2: Set up the hardware
 1. Connect SW-420 to breadboard
-2. Terminate sensor wires
+![ESPHome Dashboard](./assets/laundrybot-0.png)
+2. Cut out [perfboard](https://learn.adafruit.com/collins-lab-breadboards-and-perfboards/learn-more) and terminate sensor wires
+![ESPHome Dashboard](./assets/laundrybot-2.png)
 3. Connect ESP32 to SW-420 sensor
+![ESPHome Dashboard](./assets/laundrybot-4.png)
 4. Install sensor enclosures and plug in ESP32
+![ESPHome Dashboard](./assets/laundrybot-5.png)
+5. Configure the sensor in Home Assistant
+![ESPHome Dashboard](./assets/laundrybot-8.png)
 
-### Copyright 2019 Ryan Moore
+
+> Copyright 2019 Ryan Moore
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
