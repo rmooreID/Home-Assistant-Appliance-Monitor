@@ -6,6 +6,7 @@ While I'm using this for washer and dryer units, this concept may be extended to
 To follow this guide you will need [Home Assistant](https://www.home-assistant.io/) running on the same network as the sensor unit.
 Home Assistant
 > Open source home automation that puts local control and privacy first.
+
 There are other ways (IFTTT, Slack, Twitter) to get alerts from a sensor to your phone but that's a topic for another guide.
 
 ## Here's what you'll need
