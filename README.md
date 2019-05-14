@@ -3,7 +3,10 @@ Get alarts about the state of a "dumb" appliance based on signal from a sensor. 
 
 While I'm using this for washer and dryer units, this concept may be extended to other "dumb" appliances. For instance, you could use a thermocouple to send an alert when the oven is ready, etc.
 
-To follow this guide you will need Home Assistant (HA) running on the same network as the sensor unit. HA is open-source and free to use. There are other ways (IFTTT, Slack, Twitter) to get alerts from a sensor to your phone but that's a topic for another guide.
+To follow this guide you will need [Home Assistant](https://www.home-assistant.io/) running on the same network as the sensor unit.
+Home Assistant
+> Open source home automation that puts local control and privacy first.
+There are other ways (IFTTT, Slack, Twitter) to get alerts from a sensor to your phone but that's a topic for another guide.
 
 ## Here's what you'll need
 - Home Assistant running on the local network
