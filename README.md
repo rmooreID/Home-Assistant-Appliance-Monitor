@@ -1,5 +1,5 @@
 # LaundryBot
-The year is 2019 and there is no shortage of _smart_ appliances. But does that mean we should neglect our _dumb_ pre-IoT machines just because they can't send a push notification?
+These days there is no shortage of _smart_ appliances. But does that mean we should neglect our _dumb_ pre-IoT machines just because they can't send a push notification?
 
 I invite you to explore one way to get alerts about the state of any appliance regardless of its _smartness_ based on signal from a binary sensor. In this example I'm attaching an SW-420 vibration sensor to the back of a washer and dryer in a shared house to allow remote notification based on laundry room activity. 
 
@@ -28,8 +28,8 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 - USB cable
 
 ## Step 1: Set up the software
-1. Install Home Assistant https://www.home-assistant.io/getting-started/
-2. Install ESPHome https://www.home-assistant.io/components/esphome/
+1. Install [Home Assistant] (https://www.home-assistant.io/getting-started/)
+2. Install [ESPHome] (https://www.home-assistant.io/components/esphome/)
 3. Compile and upload [LaundryBot.yaml](./LaundryBot.yaml) script to ESP32 using [ESPHome] (https://esphome.io/guides/getting_started_hassio.html)
 
 ![ESPHome Dashboard](./assets/laundrybot-9.png)
