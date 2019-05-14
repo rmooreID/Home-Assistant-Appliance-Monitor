@@ -32,7 +32,7 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 2. Install ESPHome https://www.home-assistant.io/components/esphome/
 3. Compile and upload [LaundryBot.yaml](./LaundryBot.yaml) script to ESP32 using [ESPHome] (https://esphome.io/guides/getting_started_hassio.html)
 
-[ESPHome Dashboard](./laundrybot-9.png)
+![ESPHome Dashboard](./laundrybot-9.png)
 
 ## Step 2: Set up the hardware
 1. Connect SW-420 to breadboard
