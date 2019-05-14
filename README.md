@@ -1,7 +1,9 @@
 # LaundryBot
-Get alarts about the state of a "dumb" appliance based on signal from a sensor. In this example I'm attaching an SW-420 vibration sensor to the back of a washer and dryer in a shared house to allow remote notification based on laundry room activity. 
+The year is 2019 and there is no shortage of _smart_ appliances. But does that mean we should neglect our _dumb_ pre-IoT machines just because they can't send a push notification?
 
-While I'm using this for washer and dryer units, this concept may be extended to other "dumb" appliances. For instance, you could use a thermocouple to send an alert when the oven is ready, etc.
+I invite you to explore one way to get alerts about the state of a _dumb_ appliance based on signal from a binary sensor. In this example I'm attaching an SW-420 vibration sensor to the back of a washer and dryer in a shared house to allow remote notification based on laundry room activity. 
+
+While this guide centers around washer and dryer units, this concept may be extended to other _dumb_ appliances. For instance, you could use a thermocouple to send an alert when the oven is ready, etc.
 
 To follow this guide you will need [Home Assistant](https://www.home-assistant.io/) running on the same network as the sensor unit.
 
@@ -9,6 +11,8 @@ To follow this guide you will need [Home Assistant](https://www.home-assistant.i
 > Open source home automation that puts local control and privacy first.
 
 There are other ways (IFTTT, Slack, Twitter) to get alerts from a sensor to your phone but that's a topic for another guide.
+
+This guide assumes that the reader has basic knowledge and experience with electronics prototyping, soldering, scripting, and debugging. There are many ways to do any project and this is just one of them. While I hope this is helpful, I offer no warranty and assume no liability for the result of following any or all of the instructions in this guide.
 
 ## Here's what you'll need
 - Home Assistant running on the local network
@@ -25,13 +29,14 @@ There are other ways (IFTTT, Slack, Twitter) to get alerts from a sensor to your
 2. Install ESPHome https://www.home-assistant.io/components/esphome/
 3. Compile and upload [LaundryBot.yaml](./LaundryBot.yaml) script to ESP32 https://esphome.io/guides/getting_started_hassio.html
 
+
 ## Step 2: Set up the hardware
 1. Solder SW-420 to breadboard
 2. Terminate sensor wires
 3. Connect ESP32 to SW-420 sensor
 4. Install sensor enclosures and plug in ESP32
 
-## Copyright 2019 Ryan Moore
+### Copyright 2019 Ryan Moore
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
