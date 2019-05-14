@@ -13,7 +13,8 @@ To follow this guide you will need [Home Assistant](https://www.home-assistant.i
 There are other ways (IFTTT, Slack, Twitter) to get alerts from a sensor to your phone but that's a topic for another guide.
 
 ## Disclaimer
-This guide assumes that the reader has basic knowledge and experience with electronics prototyping, soldering, scripting, and debugging. As with any project there are many ways to acheive the desired result and this is just one of them. 
+This guide assumes that the reader has intermediate knowledge and experience with electronics prototyping, soldering, scripting, and debugging. 
+As with any project there are many ways to acheive the desired result and this is just one of them. 
 While I hope this is helpful, I offer no warranty and assume no liability for the result of following any or all of the instructions in this guide.
 
 ## Here's what you'll need
@@ -21,7 +22,7 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 - ESP32
 - SW-420 Normally Closed Vibration Sensor Module
 - 22AWG stranded wire
-- soldering kit
+- soldering kit or connector kit
 - mini breadboard
 - plastic enclosure
 - USB cable
@@ -29,11 +30,12 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 ## Step 1: Set up the software
 1. Install Home Assistant https://www.home-assistant.io/getting-started/
 2. Install ESPHome https://www.home-assistant.io/components/esphome/
-3. Compile and upload [LaundryBot.yaml](./LaundryBot.yaml) script to ESP32 https://esphome.io/guides/getting_started_hassio.html
+3. Compile and upload [LaundryBot.yaml](./LaundryBot.yaml) script to ESP32 using [ESPHome] (https://esphome.io/guides/getting_started_hassio.html)
 
+[ESPHome Dashboard](./laundrybot-9.png)
 
 ## Step 2: Set up the hardware
-1. Solder SW-420 to breadboard
+1. Connect SW-420 to breadboard
 2. Terminate sensor wires
 3. Connect ESP32 to SW-420 sensor
 4. Install sensor enclosures and plug in ESP32
