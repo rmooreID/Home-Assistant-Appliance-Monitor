@@ -28,9 +28,9 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 - USB cable
 
 ## Step 1: Set up the software
-1. Install [Home Assistant] (https://www.home-assistant.io/getting-started/)
-2. Install [ESPHome] (https://www.home-assistant.io/components/esphome/)
-3. Compile and upload [LaundryBot.yaml](./LaundryBot.yaml) script to ESP32 using [ESPHome] (https://esphome.io/guides/getting_started_hassio.html)
+1. Install [Home Assistant](https://www.home-assistant.io/getting-started/)
+2. Install [ESPHome](https://www.home-assistant.io/components/esphome/)
+3. Compile and upload [LaundryBot.yaml](./LaundryBot.yaml) script to ESP32 using [ESPHome](https://esphome.io/guides/getting_started_hassio.html)
 
 ![ESPHome Dashboard](./assets/laundrybot-9.png)
 
