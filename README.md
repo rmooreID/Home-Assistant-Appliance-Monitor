@@ -59,7 +59,7 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 7. Once the automation is created, edit the automation in the [automations.yaml](./automations.yaml) file, replacing _yourdevice_ with your actual device name.
 8. Try to trigger the sensor and adjust the sensitivity control on the SW-420 until the desired threshold is acheived.
 ![ESPHome Dashboard](./assets/laundrybot-12.png)
-9. :raised_hands:Huzzah! If everything is working, you should be able to receive notifications in the Home Assistant iOS app.
+9. :tada: If everything is working, you should be able to receive notifications in the Home Assistant iOS app.
 ![ESPHome Dashboard](./assets/laundrybot-20.png)
 
 
