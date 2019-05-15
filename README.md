@@ -58,7 +58,7 @@ Finally, it's time to get push notifications.
 ![ESPHome Dashboard](./assets/laundrybot-2.png)
 3. Connect SW-420 sensors to ESP32.
 ![ESPHome Dashboard](./assets/laundrybot-4.png)
-4. Install sensor in the optional enclosure and attach them to the back of the appliance you want to monitor.
+4. Install sensor in the optional enclosure and attach them to the appliance you want to monitor.
 ![ESPHome Dashboard](./assets/laundrybot-5.png)
 
 ## Step 3: Set up push notifications
