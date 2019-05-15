@@ -7,7 +7,7 @@
     to: 'off'
   condition: []
   action:
-  - service: notify.ios_lmr
+  - service: notify.ios_yourdevice
     data:
       message: Washer is done!
 - id: 'id-goes-here'
@@ -19,6 +19,6 @@
     to: 'off'
   condition: []
   action:
-  - service: notify.ios_lmr
+  - service: notify.ios_yourdevice
     data:
       message: Dryer is done!
