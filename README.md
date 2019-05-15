@@ -60,7 +60,7 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 8. Try to trigger the sensor and adjust the sensitivity control on the SW-420 until the desired threshold is acheived.
 ![ESPHome Dashboard](./assets/laundrybot-12.png)
 9. If everything is working, you should be able to receive notifications in the Home Assistant iOS app.
-![ESPHome Dashboard](./assets/laundrybot-11.png)
+![ESPHome Dashboard](./assets/laundrybot-20.png)
 
 
 > Copyright 2019 Ryan Moore
