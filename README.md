@@ -20,16 +20,15 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 ## Here's what you'll need
 - Home Assistant running on the local network
 - Home Assistant companion app running on iOS
-- ESP32
+- [ESP32](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather)
 - SW-420 Normally Closed Vibration Sensor Module
-- 22AWG stranded wire
-- soldering kit or connector kit
-- mini breadboard
-- plastic enclosure
+- 22AWG stranded wire (either pre-terminated or with BLS connector kit)
+- [half-size breadboard](https://www.adafruit.com/product/64)
 - USB cable
 ## Optional
+- Soldering Kit
 - [Perfboard](https://learn.adafruit.com/collins-lab-breadboards-and-perfboards/learn-more)
-- Dust-resistant enclosure for SW-420
+- Dust-resistant enclosure for SW-420 (I used some polypropylene cases I had sitting around)
 
 
 ## Step 1: Set up the software
@@ -50,7 +49,7 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 ![ESPHome Dashboard](./assets/laundrybot-2.png)
 3. Connect SW-420 sensors to ESP32.
 ![ESPHome Dashboard](./assets/laundrybot-4.png)
-4. Install sensor enclosures and plug in ESP32.
+4. Install sensors in the optional enclosures and connect them to the ESP32.
 ![ESPHome Dashboard](./assets/laundrybot-5.png)
 5. Configure the sensor in the Integrations tab of Home Assistant.
 ![ESPHome Dashboard](./assets/laundrybot-17.png)
