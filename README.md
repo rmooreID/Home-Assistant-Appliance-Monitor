@@ -28,7 +28,7 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 - USB cable
 
 ## Step 1: Set up the software
-1. Connect ESP32 and SW-420 to a breadboard. The red LED next to the USB port on the [Huzzah32](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/pinouts) is directly connected to GPIO#13. I decided to plug in the data line there to see if things were registering on the ESP32. Even without installing the functional code, the LED on the ESP32 started blinking when I tapped the board with my finger. Good start!
+1. Connect ESP32 and SW-420 to a breadboard. The red LED next to the USB port on the [Huzzah32](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/pinouts) is directly connected to GPIO#13. I decided to plug in the data line there to see if things were registering on the ESP32. Even without installing the functional code, the LED on the ESP32 started blinking when I gave the board a gentle tap.
 ![ESPHome Dashboard](./assets/laundrybot-0.png)
 2. Install [Home Assistant](https://www.home-assistant.io/getting-started/)
 3. Install [ESPHome](https://www.home-assistant.io/components/esphome/)
@@ -47,6 +47,10 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 ![ESPHome Dashboard](./assets/laundrybot-5.png)
 5. Configure the sensor in Home Assistant
 ![ESPHome Dashboard](./assets/laundrybot-8.png)
+6. Congfigure the automation.yaml in Home Assistant
+![ESPHome Dashboard](./assets/laundrybot-11.png)
+7. Try to trigger the sensor and adjust the sensitivity control on the SW-420 until the desired threshold is acheived.
+![ESPHome Dashboard](./assets/laundrybot-12.png)
 
 
 > Copyright 2019 Ryan Moore
