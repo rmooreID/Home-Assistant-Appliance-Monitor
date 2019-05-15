@@ -49,9 +49,11 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 ![ESPHome Dashboard](./assets/laundrybot-5.png)
 5. Configure the sensor in Home Assistant.
 ![ESPHome Dashboard](./assets/laundrybot-8.png)
-6. Congfigure the automation.yaml in Home Assistant.
-![ESPHome Dashboard](./assets/laundrybot-11.png)
-7. Try to trigger the sensor and adjust the sensitivity control on the SW-420 until the desired threshold is acheived.
+6. Create a basic automation from the Automation menu within the Configuration tab.
+![ESPHome Dashboard](./assets/laundrybot-15.png)
+7. Once the automation is created, edit the automation in the [automations.yaml](./automations.yaml) file, adding notify.ios info based on your device configurations.
+![ESPHome Dashboard](./assets/laundrybot-12.png)
+8. Try to trigger the sensor and adjust the sensitivity control on the SW-420 until the desired threshold is acheived.
 ![ESPHome Dashboard](./assets/laundrybot-12.png)
 
 
