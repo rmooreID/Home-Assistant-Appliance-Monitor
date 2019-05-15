@@ -52,9 +52,9 @@ Finally, it's time to get push notifications.
 ![ESPHome Dashboard](./assets/laundrybot-10.png)
 
 ## Step 2: Set up the hardware
-1. I had originally planned on terminating the wires with BLS connectors and connecting the female BLS connector directly to the SW-420. I started to wonder if this type of connection in a vibration-intensive environment would add an unnecessary risk. Ultimately I decided to solder the connections instead.
+1. I had originally planned on terminating the wires with BLS connectors and connecting the female BLS connector directly to the SW-420. I started to wonder if this type of connection in a vibration-intensive environment would introduce unnecessary risk. Ultimately I decided to solder the connections instead.
 ![ESPHome Dashboard](./assets/laundrybot-1.png)
-2. Cut out [perfboard](https://learn.adafruit.com/collins-lab-breadboards-and-perfboards/learn-more) and solder the sensor wires and the SW-420 to the perfboard.
+2. Optionally, cut appropriately sized rectangles of [perfboard](https://learn.adafruit.com/collins-lab-breadboards-and-perfboards/learn-more) and solder the sensor wires and the SW-420 to the perfboard.
 ![ESPHome Dashboard](./assets/laundrybot-2.png)
 3. Connect SW-420 sensors to ESP32.
 ![ESPHome Dashboard](./assets/laundrybot-4.png)
