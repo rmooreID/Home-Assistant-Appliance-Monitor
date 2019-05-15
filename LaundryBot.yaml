@@ -20,14 +20,14 @@ binary_sensor:
    name: "LaundryBot"
  - platform: gpio
    pin: GPIO13
-   name: "Washer"
+   name: "washer"
    device_class: vibration
    filters:
    - delayed_on: 10ms
    - delayed_off: 5min
  - platform: gpio
    pin: GPIO33
-   name: "Dryer"
+   name: "dryer"
    device_class: vibration
    filters:
    - delayed_on: 10ms
