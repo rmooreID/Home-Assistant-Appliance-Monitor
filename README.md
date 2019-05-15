@@ -23,7 +23,7 @@ Get started by installing the ESPHome Hass.io add-on. The [ESPHome Getting Start
 ### [Step 2: Set up the hardware](https://github.com/rmooreID/Home-Assistant-Appliance-Monitor#step-2-set-up-the-hardware)
 Next, you'll want to get the hardware wired up. I decided to solder mine but you can use jumper wires if you prefer.
 
-### [Step 3: Set up push notifications](https://github.com/rmooreID/Home-Assistant-Appliance-Monitor#step-3-set-up-push-notifications)
+### [Step 3: Set up push notifications](https://github.com/rmooreID/Home-Assistant-Appliance-Monitor#step-3-set-up-push-notifications-1)
 Finally, it's time to get push notifications.
 
 ## Here's what you'll need
