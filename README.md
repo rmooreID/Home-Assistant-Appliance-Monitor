@@ -17,10 +17,10 @@ This guide assumes that the reader has intermediate knowledge and experience wit
 As with any project there are many ways to acheive the desired result and this is just one of them. 
 While I hope this is helpful, I offer no warranty and assume no liability for the result of following any or all of the instructions in this guide.
 
-### [Step 1: Set up the ESP32 with ESPHome](https://github.com/rmooreID/Home-Assistant-Appliance-Monitor/blob/master/README.md#step-1-set-up-the-esp32-with-esphome)
+### [Step 1: Set up the ESP32 with ESPHome](https://github.com/rmooreID/Home-Assistant-Appliance-Monitor/blob/master/README.md#step-1-set-up-the-esp32-with-esphome-1)
 Get started by installing the ESPHome Hass.io add-on. The [ESPHome Getting Started guide](https://esphome.io/guides/getting_started_hassio.html) assumes some knowledge of [Home Assistant which has it's own Getting Started guide](https://www.home-assistant.io/getting-started/).
 
-### [Step 2: Set up the hardware](https://github.com/rmooreID/Home-Assistant-Appliance-Monitor#step-2-set-up-the-hardware)
+### [Step 2: Set up the hardware](https://github.com/rmooreID/Home-Assistant-Appliance-Monitor#step-2-set-up-the-hardware-1)
 Next, you'll want to get the hardware wired up. I decided to solder mine but you can use jumper wires if you prefer.
 
 ### [Step 3: Set up push notifications](https://github.com/rmooreID/Home-Assistant-Appliance-Monitor#step-3-set-up-push-notifications-1)
