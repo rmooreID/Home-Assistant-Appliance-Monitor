@@ -17,6 +17,15 @@ This guide assumes that the reader has intermediate knowledge and experience wit
 As with any project there are many ways to acheive the desired result and this is just one of them. 
 While I hope this is helpful, I offer no warranty and assume no liability for the result of following any or all of the instructions in this guide.
 
+## [Step 1: Set up the ESP32 with ESPHome](https://github.com/rmooreID/Home-Assistant-Appliance-Monitor/blob/master/README.md#step-1-set-up-the-esp32-with-esphome)
+Get started by installing ESPHome in Home Assistant
+
+## [Step 2](https://github.com/rmooreID/Home-Assistant-Appliance-Monitor#step-2-set-up-the-hardware)
+Next, you'll want to get the hardware wired up.
+
+## [Step 3](https://github.com/rmooreID/Home-Assistant-Appliance-Monitor#step-3-set-up-push-notifications)
+Finally, it's time to get push notifications.
+
 ## Here's what you'll need
 - Home Assistant running on the local network
 - Home Assistant companion app running on iOS
