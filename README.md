@@ -43,13 +43,13 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 ![ESPHome Dashboard](./assets/laundrybot-1.png)
 2. Cut out [perfboard](https://learn.adafruit.com/collins-lab-breadboards-and-perfboards/learn-more) and solder the sensor wires and the SW-420 to the perfboard.
 ![ESPHome Dashboard](./assets/laundrybot-2.png)
-3. Connect ESP32 to SW-420 sensor
+3. Connect SW-420 sensors to ESP32.
 ![ESPHome Dashboard](./assets/laundrybot-4.png)
-4. Install sensor enclosures and plug in ESP32
+4. Install sensor enclosures and plug in ESP32.
 ![ESPHome Dashboard](./assets/laundrybot-5.png)
-5. Configure the sensor in Home Assistant
+5. Configure the sensor in Home Assistant.
 ![ESPHome Dashboard](./assets/laundrybot-8.png)
-6. Congfigure the automation.yaml in Home Assistant
+6. Congfigure the automation.yaml in Home Assistant.
 ![ESPHome Dashboard](./assets/laundrybot-11.png)
 7. Try to trigger the sensor and adjust the sensitivity control on the SW-420 until the desired threshold is acheived.
 ![ESPHome Dashboard](./assets/laundrybot-12.png)
