@@ -27,6 +27,10 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 - mini breadboard
 - plastic enclosure
 - USB cable
+## Optional
+- [Perfboard](https://learn.adafruit.com/collins-lab-breadboards-and-perfboards/learn-more)
+- Dust-resistant enclosure for SW-420
+
 
 ## Step 1: Set up the software
 1. Connect ESP32 and SW-420 to a breadboard. The red LED next to the USB port on the [Huzzah32](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/pinouts) is directly connected to GPIO#13. I decided to plug in the data line there to see if things were registering on the ESP32. Even without installing the functional code, the LED on the ESP32 started blinking when I gave the board a gentle tap.
@@ -40,7 +44,7 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 ![ESPHome Dashboard](./assets/laundrybot-10.png)
 
 ## Step 2: Set up the hardware
-1. I had originally planned on terminating the wires with BLS connectors and connecting the female BLS connector directly to the SW-420. I was concerned that using this type of connector in a vibration-intensive environment would add an unnecessary risk and decided to solder the connections instead.
+1. I had originally planned on terminating the wires with BLS connectors and connecting the female BLS connector directly to the SW-420. I started to wonder if this type of connection in a vibration-intensive environment would add an unnecessary risk and decided to solder the connections instead.
 ![ESPHome Dashboard](./assets/laundrybot-1.png)
 2. Cut out [perfboard](https://learn.adafruit.com/collins-lab-breadboards-and-perfboards/learn-more) and solder the sensor wires and the SW-420 to the perfboard.
 ![ESPHome Dashboard](./assets/laundrybot-2.png)
