@@ -19,6 +19,7 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 
 ## Here's what you'll need
 - Home Assistant running on the local network
+- Home Assistant companion app running on iOS
 - ESP32
 - SW-420 Normally Closed Vibration Sensor Module
 - 22AWG stranded wire
@@ -47,13 +48,15 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 ![ESPHome Dashboard](./assets/laundrybot-4.png)
 4. Install sensor enclosures and plug in ESP32.
 ![ESPHome Dashboard](./assets/laundrybot-5.png)
-5. Configure the sensor in Home Assistant.
-![ESPHome Dashboard](./assets/laundrybot-8.png)
+5. Configure the sensor in the Integrations tab of Home Assistant.
+![ESPHome Dashboard](./assets/laundrybot-17.png)
 6. Create a basic automation from the Automation menu within the Configuration tab.
 ![ESPHome Dashboard](./assets/laundrybot-15.png)
 7. Once the automation is created, edit the automation in the [automations.yaml](./automations.yaml) file, replacing _yourdevice_ with your actual device name.
 8. Try to trigger the sensor and adjust the sensitivity control on the SW-420 until the desired threshold is acheived.
 ![ESPHome Dashboard](./assets/laundrybot-12.png)
+9. If everything is working, you should be able to receive notifications in the Home Assistant iOS app.
+![ESPHome Dashboard](./assets/laundrybot-11.png)
 
 
 > Copyright 2019 Ryan Moore
