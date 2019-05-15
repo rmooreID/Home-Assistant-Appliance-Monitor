@@ -22,7 +22,7 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 - Home Assistant companion app running on iOS
 - [ESP32](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather)
 - SW-420 Normally Closed Vibration Sensor Module
-- 22AWG stranded wire (either pre-terminated or with BLS connector kit)
+- 22AWG-28AWG stranded wire (either pre-terminated [jumper wires](https://www.adafruit.com/?q=jumper%20wires) with BLS connectors or using a BLS connector kit and crimping tool)
 - [half-size breadboard](https://www.adafruit.com/product/64)
 - USB cable
 ## Optional
@@ -31,19 +31,19 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 - Dust-resistant enclosure for SW-420 (I used some polypropylene cases I had sitting around)
 
 
-## Step 1: Set up the software
-1. Connect ESP32 and SW-420 to a breadboard. The red LED next to the USB port on the [Huzzah32](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/pinouts) is directly connected to GPIO#13. I decided to plug in the data line there to see if things were registering on the ESP32. Even without installing the functional code, the LED on the ESP32 started blinking when I gave the board a gentle tap.
+## Step 1: Set up the ESP32 with ESPHome
+1. Connect ESP32 and SW-420 to a breadboard. The red LED next to the USB port on the [Huzzah32](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/pinouts) is directly connected to GPIO#13. I decided to plug in the data line there to see if things were registering on the ESP32. The LED on the ESP32 started blinking when I gave the board a gentle tap.
 ![ESPHome Dashboard](./assets/laundrybot-0.png)
 2. Install [Home Assistant](https://www.home-assistant.io/getting-started/)
 ![Home Assistant](https://developers.home-assistant.io/img/en/frontend/frontend-hero.png)
-3. Install [ESPHome](https://www.home-assistant.io/components/esphome/)
+3. Install [ESPHome](https://www.home-assistant.io/components/esphome/) and continue through the steps to set up your first node.
 ![ESPHome](https://esphome.io/_images/hassio_addon.png)
 4. Compile and upload [LaundryBot.yaml](./LaundryBot.yaml) script to ESP32 using [ESPHome](https://esphome.io/guides/getting_started_hassio.html)
 ![ESPHome Dashboard](./assets/laundrybot-9.png)
 ![ESPHome Dashboard](./assets/laundrybot-10.png)
 
 ## Step 2: Set up the hardware
-1. I had originally planned on terminating the wires with BLS connectors and connecting the female BLS connector directly to the SW-420. I started to wonder if this type of connection in a vibration-intensive environment would add an unnecessary risk and decided to solder the connections instead.
+1. I had originally planned on terminating the wires with BLS connectors and connecting the female BLS connector directly to the SW-420. I started to wonder if this type of connection in a vibration-intensive environment would add an unnecessary risk. Ultimately I decided to solder the connections instead.
 ![ESPHome Dashboard](./assets/laundrybot-1.png)
 2. Cut out [perfboard](https://learn.adafruit.com/collins-lab-breadboards-and-perfboards/learn-more) and solder the sensor wires and the SW-420 to the perfboard.
 ![ESPHome Dashboard](./assets/laundrybot-2.png)
@@ -51,14 +51,16 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 ![ESPHome Dashboard](./assets/laundrybot-4.png)
 4. Install sensors in the optional enclosures and connect them to the ESP32.
 ![ESPHome Dashboard](./assets/laundrybot-5.png)
-5. Configure the sensor in the Integrations tab of Home Assistant.
+
+## Step 3: Set up push notifications
+1. Configure the sensor in the Integrations tab of Home Assistant.
 ![ESPHome Dashboard](./assets/laundrybot-17.png)
-6. Create a basic automation from the Automation menu within the Configuration tab.
+2. Create a basic automation from the Automation menu within the Configuration tab.
 ![ESPHome Dashboard](./assets/laundrybot-15.png)
-7. Once the automation is created, edit the automation in the [automations.yaml](./automations.yaml) file, replacing _yourdevice_ with your actual device name.
-8. Try to trigger the sensor and adjust the sensitivity control on the SW-420 until the desired threshold is acheived.
+3. Once the automation is created, edit the automation in the [automations.yaml](./automations.yaml) file, replacing _yourdevice_ with your actual device name.
+4. Try to trigger the sensor and adjust the sensitivity control on the SW-420 until the desired threshold is acheived.
 ![ESPHome Dashboard](./assets/laundrybot-12.png)
-9. :tada: If everything is working, you should be able to receive notifications in the Home Assistant iOS app.
+5. :tada: If everything is working, you should be able to receive notifications in the Home Assistant iOS app.
 ![ESPHome Dashboard](./assets/laundrybot-20.png)
 
 
