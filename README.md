@@ -1,5 +1,5 @@
 # LaundryBot
-These days there is no shortage of _smart_ appliances. But does that mean we should neglect our _dumb_ pre-IoT machines just because they can't send a push notification?
+These days there is no shortage of _smart_ appliances. But does that mean we should neglect our _simple_ pre-IoT machines just because they can't send a push notification?
 
 I invite you to explore one way to get alerts about the state of any appliance regardless of its _smartness_ based on signal from a binary sensor. In this example I'm attaching an SW-420 vibration sensor to the back of a washer and dryer in a shared house to allow remote notification based on laundry room activity. 
 
@@ -10,7 +10,7 @@ To follow this guide you will need [Home Assistant](https://www.home-assistant.i
 > ## [Home Assistant](https://www.home-assistant.io/)
 > Open source home automation that puts local control and privacy first.
 
-There are other ways (IFTTT, Slack, Twitter) to get alerts from a sensor to your phone but that's a topic for another guide.
+There are other ways (IFTTT, Slack, Twitter) to get alerts from a sensor to your phone but these are a great topic for [another guide](https://github.com/Shmoopty/rpi-appliance-monitor).
 
 ## Disclaimer
 This guide assumes that the reader has intermediate knowledge and experience with electronics prototyping, soldering, scripting, and debugging. 
@@ -37,9 +37,9 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 ![ESPHome Dashboard](./assets/laundrybot-10.png)
 
 ## Step 2: Set up the hardware
-1. I had originally planned on terminating the wires with some BLS connectors.
+1. I had originally planned on terminating the wires with BLS connectors and connecting the female BLS connector directly to the SW-420. I was concerned that using connectors in a vibration-intensive environment would add an unnecessary risk and decided to solder the connections instead.
 ![ESPHome Dashboard](./assets/laundrybot-1.png)
-2. Instead, I decided to cut out [perfboard](https://learn.adafruit.com/collins-lab-breadboards-and-perfboards/learn-more) and solder the sensor wires.
+2. Cut out [perfboard](https://learn.adafruit.com/collins-lab-breadboards-and-perfboards/learn-more) and solder the sensor wires and the SW-420 to the perfboard.
 ![ESPHome Dashboard](./assets/laundrybot-2.png)
 3. Connect ESP32 to SW-420 sensor
 ![ESPHome Dashboard](./assets/laundrybot-4.png)
