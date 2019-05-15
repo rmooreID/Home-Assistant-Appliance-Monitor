@@ -39,7 +39,7 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 ![ESPHome Dashboard](./assets/laundrybot-10.png)
 
 ## Step 2: Set up the hardware
-1. I had originally planned on terminating the wires with BLS connectors and connecting the female BLS connector directly to the SW-420. I was concerned that using connectors in a vibration-intensive environment would add an unnecessary risk and decided to solder the connections instead.
+1. I had originally planned on terminating the wires with BLS connectors and connecting the female BLS connector directly to the SW-420. I was concerned that using this type of connector in a vibration-intensive environment would add an unnecessary risk and decided to solder the connections instead.
 ![ESPHome Dashboard](./assets/laundrybot-1.png)
 2. Cut out [perfboard](https://learn.adafruit.com/collins-lab-breadboards-and-perfboards/learn-more) and solder the sensor wires and the SW-420 to the perfboard.
 ![ESPHome Dashboard](./assets/laundrybot-2.png)
