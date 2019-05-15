@@ -31,6 +31,7 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 1. Connect ESP32 and SW-420 to a breadboard. The red LED next to the USB port on the [Huzzah32](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/pinouts) is directly connected to GPIO#13. I decided to plug in the data line there to see if things were registering on the ESP32. Even without installing the functional code, the LED on the ESP32 started blinking when I gave the board a gentle tap.
 ![ESPHome Dashboard](./assets/laundrybot-0.png)
 2. Install [Home Assistant](https://www.home-assistant.io/getting-started/)
+![Home Assistant](https://developers.home-assistant.io/img/en/frontend/frontend-hero.png)
 3. Install [ESPHome](https://www.home-assistant.io/components/esphome/)
 4. Compile and upload [LaundryBot.yaml](./LaundryBot.yaml) script to ESP32 using [ESPHome](https://esphome.io/guides/getting_started_hassio.html)
 ![ESPHome Dashboard](./assets/laundrybot-9.png)
