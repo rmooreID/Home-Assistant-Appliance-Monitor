@@ -28,7 +28,7 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 - USB cable
 
 ## Step 1: Set up the software
-1. Connect SW-420 to breadboard
+1. Connect ESP32 and SW-420 to a breadboard. The red LED next to the USB port on the [Huzzah32](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/pinouts) is directly connected to GPIO#13. I decided to plug in the data line there to see if things were registering on the ESP32. Even without installing the functional code, the LED on the ESP32 started blinking when I tapped the board with my finger. Good start!
 ![ESPHome Dashboard](./assets/laundrybot-0.png)
 2. Install [Home Assistant](https://www.home-assistant.io/getting-started/)
 3. Install [ESPHome](https://www.home-assistant.io/components/esphome/)
@@ -37,9 +37,9 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 ![ESPHome Dashboard](./assets/laundrybot-10.png)
 
 ## Step 2: Set up the hardware
-1. Decide whether you are going to use some kind of connectors or if you're going to solder the wire directly to perfboard like I did.
+1. I had originally planned on terminating the wires with some BLS connectors.
 ![ESPHome Dashboard](./assets/laundrybot-1.png)
-2. Cut out [perfboard](https://learn.adafruit.com/collins-lab-breadboards-and-perfboards/learn-more) and terminate sensor wires
+2. Instead, I decided to cut out [perfboard](https://learn.adafruit.com/collins-lab-breadboards-and-perfboards/learn-more) and solder the sensor wires.
 ![ESPHome Dashboard](./assets/laundrybot-2.png)
 3. Connect ESP32 to SW-420 sensor
 ![ESPHome Dashboard](./assets/laundrybot-4.png)
