@@ -1,0 +1,24 @@
+- id: 'id-goes-here'
+  alias: Washer is done!
+  trigger:
+  - entity_id: binary_sensor.washer
+    from: 'on'
+    platform: state
+    to: 'off'
+  condition: []
+  action:
+  - service: notify.ios_lmr
+    data:
+      message: Washer is done!
+- id: 'id-goes-here'
+  alias: Dryer is done!
+  trigger:
+  - entity_id: binary_sensor.dryer
+    from: 'on'
+    platform: state
+    to: 'off'
+  condition: []
+  action:
+  - service: notify.ios_lmr
+    data:
+      message: Dryer is done!
