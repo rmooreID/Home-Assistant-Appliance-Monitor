@@ -52,7 +52,6 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 6. Create a basic automation from the Automation menu within the Configuration tab.
 ![ESPHome Dashboard](./assets/laundrybot-15.png)
 7. Once the automation is created, edit the automation in the [automations.yaml](./automations.yaml) file, replacing _yourdevice_ with your actual device name.
-![ESPHome Dashboard](./assets/laundrybot-12.png)
 8. Try to trigger the sensor and adjust the sensitivity control on the SW-420 until the desired threshold is acheived.
 ![ESPHome Dashboard](./assets/laundrybot-12.png)
 
