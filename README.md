@@ -33,6 +33,7 @@ While I hope this is helpful, I offer no warranty and assume no liability for th
 2. Install [Home Assistant](https://www.home-assistant.io/getting-started/)
 ![Home Assistant](https://developers.home-assistant.io/img/en/frontend/frontend-hero.png)
 3. Install [ESPHome](https://www.home-assistant.io/components/esphome/)
+![ESPHome](https://esphome.io/_images/hassio_addon.png)
 4. Compile and upload [LaundryBot.yaml](./LaundryBot.yaml) script to ESP32 using [ESPHome](https://esphome.io/guides/getting_started_hassio.html)
 ![ESPHome Dashboard](./assets/laundrybot-9.png)
 ![ESPHome Dashboard](./assets/laundrybot-10.png)
