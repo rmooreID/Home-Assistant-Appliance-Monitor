@@ -48,7 +48,7 @@ Finally, it's time to get push notifications.
 3. Install [ESPHome](https://www.home-assistant.io/components/esphome/) and continue through the steps to set up your first node.
 ![ESPHome](https://esphome.io/_images/hassio_addon.png)
 4. Compile and upload [LaundryBot.yaml](./LaundryBot.yaml) script to ESP32 using [ESPHome](https://esphome.io/guides/getting_started_hassio.html)
-You may have noticed that I have this file set up for two different sensors connected to the same ESP32.
+You may have noticed that I have this file set up for two different sensors connected to the same ESP32. If you only need one sensor you can delete the second one.
 ```
 binary_sensor:
  - platform: status
@@ -68,17 +68,14 @@ binary_sensor:
    - delayed_on: 100ms
    - delayed_off: 5min
 ```
-4.1 If you only need one sensor you can delete the second one.
-
+![ESPHome Dashboard](./assets/laundrybot-9.png)
+![ESPHome Dashboard](./assets/laundrybot-10.png)
 5. Once you've tested the hardware you may find that you need to fine tune the [Binary Sensor Filter](https://esphome.io/components/binary_sensor/index.html?highlight=binary%20filter#binary-sensor-filters) which helps debounce the input signal and potentially mitigate false positives. 
 ```yaml
    filters:
    - delayed_on: 100ms
    - delayed_off: 5min
 ```
-5.1 For my hardware connected to my appliances these were the values that worked.
-![ESPHome Dashboard](./assets/laundrybot-9.png)
-![ESPHome Dashboard](./assets/laundrybot-10.png)
 
 ## Step 2: Set up the hardware
 1. I had originally planned on terminating the wires with BLS connectors and connecting the female BLS connector directly to the SW-420. I started to wonder if this type of connection in a vibration-intensive environment would introduce unnecessary risk. Ultimately I decided to solder the connections instead.
