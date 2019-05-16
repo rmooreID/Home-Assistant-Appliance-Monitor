@@ -55,7 +55,7 @@ You may have noticed that I have this file set up for two different sensors conn
    - delayed_on: 100ms
    - delayed_off: 5min
 ```
-Also worth noting: this is where you can fine tune the [Binary Sensor Filter](https://esphome.io/components/binary_sensor/index.html?highlight=binary%20filter#binary-sensor-filters) which helps debounce the input signal and potentially mitigate false positives.
+5. Once you've tested the hardware you may find that you need to fine tune the [Binary Sensor Filter](https://esphome.io/components/binary_sensor/index.html?highlight=binary%20filter#binary-sensor-filters) which helps debounce the input signal and potentially mitigate false positives. For my hardware connected to my appliances these were the values that worked.
 
 ![ESPHome Dashboard](./assets/laundrybot-9.png)
 ![ESPHome Dashboard](./assets/laundrybot-10.png)
