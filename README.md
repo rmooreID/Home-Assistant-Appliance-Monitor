@@ -68,7 +68,7 @@ binary_sensor:
    - delayed_on: 100ms
    - delayed_off: 5min
 ```
-If you only need one sensor you can delete the second one.
+   If you only need one sensor you can delete the second one.
 
 5. Once you've tested the hardware you may find that you need to fine tune the [Binary Sensor Filter](https://esphome.io/components/binary_sensor/index.html?highlight=binary%20filter#binary-sensor-filters) which helps debounce the input signal and potentially mitigate false positives. 
 ```yaml
@@ -76,7 +76,7 @@ If you only need one sensor you can delete the second one.
    - delayed_on: 100ms
    - delayed_off: 5min
 ```
-For my hardware connected to my appliances these were the values that worked.
+   For my hardware connected to my appliances these were the values that worked.
 ![ESPHome Dashboard](./assets/laundrybot-9.png)
 ![ESPHome Dashboard](./assets/laundrybot-10.png)
 
