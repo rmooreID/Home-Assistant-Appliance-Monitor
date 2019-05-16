@@ -48,6 +48,13 @@ Finally, it's time to get push notifications.
 3. Install [ESPHome](https://www.home-assistant.io/components/esphome/) and continue through the steps to set up your first node.
 ![ESPHome](https://esphome.io/_images/hassio_addon.png)
 4. Compile and upload [LaundryBot.yaml](./LaundryBot.yaml) script to ESP32 using [ESPHome](https://esphome.io/guides/getting_started_hassio.html)
+You may have noticed that I have this file set up for two different sensors connected to the same ESP32. If you only need one sensor you can delete the second one.
+Also worth noting: this is where you can fine tune the [Binary Sensor Filter](https://esphome.io/components/binary_sensor/index.html?highlight=binary%20filter#binary-sensor-filters) which helps debounce the input signal and potentially mitigate false positives.
+```yaml
+   filters:
+   - delayed_on: 100ms
+   - delayed_off: 5min
+```
 ![ESPHome Dashboard](./assets/laundrybot-9.png)
 ![ESPHome Dashboard](./assets/laundrybot-10.png)
 
