@@ -69,6 +69,7 @@ binary_sensor:
    - delayed_off: 5min
 ```
 If you only need one sensor you can delete the second one.
+
 5. Once you've tested the hardware you may find that you need to fine tune the [Binary Sensor Filter](https://esphome.io/components/binary_sensor/index.html?highlight=binary%20filter#binary-sensor-filters) which helps debounce the input signal and potentially mitigate false positives. 
 ```yaml
    filters:
