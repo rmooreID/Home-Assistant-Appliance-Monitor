@@ -101,7 +101,7 @@ binary_sensor:
 ![ESPHome Dashboard](./assets/laundrybot-17.png)
 2. Create a basic automation from the Automation menu within the Configuration tab.
 ![ESPHome Dashboard](./assets/laundrybot-15.png)
-3. Once the automation is created, edit the automation in the [automations.yaml](./automations.yaml) file, replacing _yourdevice_ with your actual device name.
+3. Once the automation is created, edit the automation in the [automations.yaml](./automations.yaml) file, replacing _yourdevice_ with your iOS device name.
 ```YAML
 - id: 'id-goes-here'
   alias: Washer is done!
