@@ -60,14 +60,6 @@ binary_sensor:
    filters:
    - delayed_on: 100ms
    - delayed_off: 5min
-# the second sensor is optional
- - platform: gpio
-   pin: GPIO33
-   name: "dryer"
-   device_class: vibration
-   filters:
-   - delayed_on: 100ms
-   - delayed_off: 5min
 ```
 ![ESPHome Dashboard](./assets/laundrybot-9.png)
 ![ESPHome Dashboard](./assets/laundrybot-10.png)
@@ -94,6 +86,12 @@ binary_sensor:
 2. Create a basic automation from the Automation menu within the Configuration tab.
 ![ESPHome Dashboard](./assets/laundrybot-15.png)
 3. Once the automation is created, edit the automation in the [automations.yaml](./automations.yaml) file, replacing _yourdevice_ with your actual device name.
+```
+action:
+  - service: notify.ios_yourdevice
+    data:
+      message: Washer is done!
+```
 4. Try to trigger the sensor and adjust the sensitivity control on the SW-420 until the desired threshold is acheived.
 ![ESPHome Dashboard](./assets/laundrybot-12.png)
 5. :tada: If everything is working, you should be able to receive notifications in the Home Assistant iOS app.
