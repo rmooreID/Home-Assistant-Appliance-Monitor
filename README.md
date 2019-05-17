@@ -50,6 +50,23 @@ Finally, it's time to get push notifications.
 4. Compile and upload [LaundryBot.yaml](./LaundryBot.yaml) script to ESP32 using [ESPHome](https://esphome.io/guides/getting_started_hassio.html)
 You may have noticed that I have this file set up for two different sensors connected to the same ESP32. If you only need one sensor you can delete the second one.
 ```YAML
+LaundryBot
+
+esphome:
+ name: laundrybot
+ platform: ESP32
+ board: featheresp32
+
+wifi:
+ ssid: 'network-id'
+ password: 'network-password'
+
+api:
+ password: 'api-password'
+
+ota:
+ password: 'ota-password'
+
 binary_sensor:
  - platform: status
    name: "LaundryBot"
@@ -86,8 +103,16 @@ binary_sensor:
 2. Create a basic automation from the Automation menu within the Configuration tab.
 ![ESPHome Dashboard](./assets/laundrybot-15.png)
 3. Once the automation is created, edit the automation in the [automations.yaml](./automations.yaml) file, replacing _yourdevice_ with your actual device name.
-```
-action:
+```YAML
+- id: 'id-goes-here'
+  alias: Washer is done!
+  trigger:
+  - entity_id: binary_sensor.washer
+    from: 'on'
+    platform: state
+    to: 'off'
+  condition: []
+  action:
   - service: notify.ios_yourdevice
     data:
       message: Washer is done!
