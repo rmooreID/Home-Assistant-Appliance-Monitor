@@ -13,7 +13,7 @@ To follow this guide you will need [Home Assistant](https://www.home-assistant.i
 There are other ways (IFTTT, Slack, Twitter) to get alerts from a sensor to your phone but these are a great topic for [another excellent guide](https://github.com/Shmoopty/rpi-appliance-monitor).
 
 ## Disclaimer
-This guide assumes that the reader has intermediate knowledge and experience with electronics prototyping, soldering, scripting, and debugging. 
+This guide assumes that the reader has intermediate knowledge and experience with electronics prototyping, soldering, scripting, debugging, and safe practices. 
 As with any project there are many ways to acheive the desired result and this is just one of them. 
 While I hope this is helpful, I offer no warranty and assume no liability for the result of following any or all of the instructions in this guide.
 
