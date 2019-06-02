@@ -42,11 +42,11 @@ Finally, it's time to get push notifications.
 
 ## Step 1: Set up the ESP32 with ESPHome
 1. Connect ESP32 and SW-420 to a breadboard. The red LED next to the USB port on the [Huzzah32](https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/pinouts) is directly connected to GPIO#13. I decided to plug in the data line there to see if things were registering on the ESP32. The LED on the ESP32 started blinking when I gave the board a gentle tap.
-![ESPHome Dashboard](./assets/laundrybot-0.png)
+![ESPHome Dashboard](./assets/laundrybot-0.jpeg)
 2. Install [Home Assistant](https://www.home-assistant.io/getting-started/)
-![Home Assistant](https://developers.home-assistant.io/img/en/frontend/frontend-hero.png)
+![Home Assistant](https://developers.home-assistant.io/img/en/frontend/frontend-hero.jpeg)
 3. Install [ESPHome](https://www.home-assistant.io/components/esphome/) and continue through the steps to set up your first node.
-![ESPHome](https://esphome.io/_images/hassio_addon.png)
+![ESPHome](https://esphome.io/_images/hassio_addon.jpeg)
 4. Compile and upload [LaundryBot.yaml](./LaundryBot.yaml) script to ESP32 using [ESPHome](https://esphome.io/guides/getting_started_hassio.html)
 You may have noticed that I have this file set up for two different sensors connected to the same ESP32. If you only need one sensor you can delete the second one.
 ```YAML
@@ -78,7 +78,7 @@ binary_sensor:
    - delayed_on: 100ms
    - delayed_off: 5min
 ```
-![ESPHome Dashboard](./assets/laundrybot-9.png)
+![ESPHome Dashboard](./assets/laundrybot-9.jpeg)
 5. Once you've tested the hardware you may find that you need to fine tune the [Binary Sensor Filter](https://esphome.io/components/binary_sensor/index.html?highlight=binary%20filter#binary-sensor-filters) which helps debounce the input signal and potentially mitigate false positives. 
 ```YAML
    filters:
@@ -88,19 +88,19 @@ binary_sensor:
 
 ## Step 2: Set up the hardware
 1. I had originally planned on terminating the wires with BLS connectors and connecting the female BLS connector directly to the SW-420. I started to wonder if this type of connection in a vibration-intensive environment would introduce unnecessary risk. Ultimately I decided to solder the connections instead.
-![ESPHome Dashboard](./assets/laundrybot-1.png)
+![ESPHome Dashboard](./assets/laundrybot-1.jpeg)
 2. Optionally, cut appropriately sized rectangles of [perfboard](https://learn.adafruit.com/collins-lab-breadboards-and-perfboards/learn-more) and solder the sensor wires and the SW-420 to the perfboard.
-![ESPHome Dashboard](./assets/laundrybot-2.png)
+![ESPHome Dashboard](./assets/laundrybot-2.jpeg)
 3. Connect SW-420 sensors to ESP32.
-![ESPHome Dashboard](./assets/laundrybot-4.png)
+![ESPHome Dashboard](./assets/laundrybot-4.jpeg)
 4. Install sensor in the optional enclosure and attach them to the appliance you want to monitor.
-![ESPHome Dashboard](./assets/laundrybot-5.png)
+![ESPHome Dashboard](./assets/laundrybot-5.jpeg)
 
 ## Step 3: Set up push notifications
 1. Configure the sensor in the Integrations tab of Home Assistant.
-![ESPHome Dashboard](./assets/laundrybot-17.png)
+![ESPHome Dashboard](./assets/laundrybot-17.jpeg)
 2. Create a basic automation from the Automation menu within the Configuration tab.
-![ESPHome Dashboard](./assets/laundrybot-15.png)
+![ESPHome Dashboard](./assets/laundrybot-15.jpeg)
 3. Once the automation is created, edit the automation in the [automations.yaml](./automations.yaml) file, replacing _yourdevice_ with your iOS device name.
 ```YAML
 - id: 'id-goes-here'
@@ -117,9 +117,9 @@ binary_sensor:
       message: Washer is done!
 ```
 4. Try to trigger the sensor and adjust the sensitivity control on the SW-420 until the desired threshold is acheived.
-![ESPHome Dashboard](./assets/laundrybot-12.png)
+![ESPHome Dashboard](./assets/laundrybot-12.jpeg)
 5. :tada: If everything is working, you should be able to receive notifications in the Home Assistant iOS app.
-![ESPHome Dashboard](./assets/laundrybot-20.png)
+![ESPHome Dashboard](./assets/laundrybot-20.jpeg)
 
 
 > Copyright 2019 Ryan Moore
